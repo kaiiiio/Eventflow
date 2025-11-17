@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "composite": true,
+    "incremental": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@eventflow/nats-client": ["libs/nats-client/index.ts"],
+      "@eventflow/workflow-sdk": ["libs/workflow-sdk/index.ts"],
+      "@eventflow/types": ["libs/types/index.ts"]
+    }
+  },
+  "references": [
+    { "path": "./apps/orchestrator/tsconfig.json" },
+    { "path": "./apps/worker-template/tsconfig.json" },
+    { "path": "./libs/nats-client/tsconfig.json" },
+    { "path": "./libs/workflow-sdk/tsconfig.json" },
+    { "path": "./libs/types/tsconfig.json" }
+  ],
+  "files": [],
+  "include": []
+}
+

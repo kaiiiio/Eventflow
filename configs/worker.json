@@ -1,0 +1,10 @@
+{
+  "nats": {
+    "servers": ["nats://localhost:4222"]
+  },
+  "worker": {
+    "name": "default-worker",
+    "concurrency": 10
+  }
+}
+

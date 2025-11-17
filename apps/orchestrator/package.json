@@ -1,0 +1,24 @@
+{
+  "name": "@eventflow/orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@eventflow/nats-client": "*",
+    "@eventflow/workflow-sdk": "*",
+    "@eventflow/types": "*",
+    "express": "^4.18.2",
+    "nats": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0"
+  }
+}
+

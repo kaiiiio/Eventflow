@@ -1,0 +1,10 @@
+{
+  "tenants": [
+    {
+      "id": "tenant-1",
+      "name": "Tenant 1",
+      "config": {}
+    }
+  ]
+}
+

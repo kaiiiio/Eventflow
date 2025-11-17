@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../../libs/nats-client/tsconfig.json" },
+    { "path": "../../libs/workflow-sdk/tsconfig.json" },
+    { "path": "../../libs/types/tsconfig.json" }
+  ]
+}
+

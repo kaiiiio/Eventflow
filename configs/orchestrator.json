@@ -1,0 +1,11 @@
+{
+  "port": 3000,
+  "nats": {
+    "servers": ["nats://localhost:4222"]
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432
+  }
+}
+
